@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-class XiaojiejieItem extends Component {
+class FruitItem extends Component {
   constructor(props) {
     super(props);
     this.handleItem = this.handleItem.bind(this);
@@ -27,14 +27,14 @@ class XiaojiejieItem extends Component {
   }
 }
 
-XiaojiejieItem.propTypes = {
+FruitItem.propTypes = {
   content: PropTypes.string.isRequired,
   index: PropTypes.number,
   deleteItem: PropTypes.func
 }
 
-XiaojiejieItem.defaultProps = {
+FruitItem.defaultProps = {
 
 }
 
-export default XiaojiejieItem;
+export default FruitItem;

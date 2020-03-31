@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Xiaojiejie from './Xiaojiejie';
+// import DemoBase from './demo_base';
+import DemoRedux from './demo_redux';
 
-ReactDOM.render(<Xiaojiejie />, document.getElementById('root'));
+ReactDOM.render(<DemoRedux />, document.getElementById('root'));

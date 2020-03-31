@@ -1,13 +1,13 @@
 import React, { Component, Fragment } from 'react';
 import './style.css';
-import XiaojiejieItem from './XiaojiejieItem';
+import Item from './Item';
 
-class Xiaojiejie extends Component {
+class DemoBase extends Component {
   constructor(props) {
     super(props);
     this.state = {
       inputValue: '',
-      list: ['基础按摩', '基础按摩2']
+      list: ['苹果', '香蕉']
     }
   };
 
@@ -15,7 +15,7 @@ class Xiaojiejie extends Component {
     return (
       <Fragment>
         <div>
-          <label htmlFor="fuwu">服务:</label>
+          <label htmlFor="fuwu">水果:</label>
           <input
             id="fuwu"
             className="input"
@@ -23,12 +23,12 @@ class Xiaojiejie extends Component {
             value={ this.state.inputValue }
             onChange={ this.inputChange.bind(this) }
           />
-          <button onClick={ this.addList.bind(this) }>增加服务</button>
+          <button onClick={ this.addList.bind(this) }>增加水果</button>
           <ul>
             {
               this.state.list.map((item, index) => {
                 return(
-                  <XiaojiejieItem
+                  <Item
                     key={index+item}
                     content={item}
                     index={index}
@@ -65,4 +65,4 @@ class Xiaojiejie extends Component {
   };
 }
 
-export default Xiaojiejie;
+export default DemoBase;
