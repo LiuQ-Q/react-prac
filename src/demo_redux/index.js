@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import store from '../store';
-import { getDataThunk, getDataSaga, changeInputAction, addItemAction, deleteItemAction } from '../store/actionCreators';
+import { 
+  getDataThunk, getDataSaga, changeInputAction, 
+  addItemAction, deleteItemAction 
+} from '../store/actionCreators';
 import DemoReduxUI from './DemoReduxUI';
 
 class DemoRedux extends Component {
