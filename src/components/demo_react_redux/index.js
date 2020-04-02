@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import store from '../store';
+import store from '../../store';
 import { connect } from 'react-redux';
 import { 
   getDataThunk, getDataSaga, changeInputAction, 
   addItemAction, deleteItemAction 
-} from '../store/actionCreators';
+} from '../../store/actionCreators';
 
 const DemoReactRedux = (props) => {
   let { inputValue, data, inputChange, addItem, deleteItem } = props;
