@@ -3,9 +3,8 @@ import { BrowserRouter as Router, Route, Link, Redirect, Switch } from 'react-ro
 import './home.css';
 
 import RightReact from './RightReact';
-import DemoBase from '../components/demo_base';
-import DemoRedux from '../components/demo_redux';
-import DemoReactRedux from '../components/demo_react_redux';
+import RightVue from './rightVue';
+import RightAngular from './rightAngular';
 
 const Home = () => {
   return (
@@ -15,17 +14,15 @@ const Home = () => {
           <h3>一级导航</h3>
           <ul>
             <li><Link to="/react">React</Link></li>
-            <li><Link to="/base">Base</Link></li>
-            <li><Link to="/redux">Redux</Link></li>
-            <li><Link to="/react_redux">ReactRedux</Link></li>
+            <li><Link to="/vue">Vue</Link></li>
+            <li><Link to="/angular">Angular</Link></li>
           </ul>
         </div>
         <div className="rightMain">
           <Switch>
             <Route path="/react" exact component={RightReact} />
-            <Route path="/base" exact component={DemoBase} />
-            <Route path="/redux" exact component={DemoRedux} />
-            <Route path="/react_redux" exact component={DemoReactRedux} />
+            <Route path="/vue" exact component={RightVue} />
+            <Route path="/angular" exact component={RightAngular} />
             <Redirect exact from="/" to="/react" />
           </Switch>
         </div>

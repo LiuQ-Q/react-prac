@@ -5,6 +5,7 @@ import './rightReact.css';
 import DemoBase from '../components/demo_base';
 import DemoRedux from '../components/demo_redux';
 import DemoReactRedux from '../components/demo_react_redux';
+import DemoHooks from '../components/demo_hooks';
 
 const RightReact = () => {
   return (
@@ -14,6 +15,7 @@ const RightReact = () => {
           <li><Link to="/react/base">Base</Link></li>
           <li><Link to="/react/redux">Redux</Link></li>
           <li><Link to="/react/react_redux">ReactRedux</Link></li>
+          <li><Link to="/react/hooks">ReactHooks</Link></li>
         </ul>
       </div>
       <div className="reactContent">
@@ -21,6 +23,7 @@ const RightReact = () => {
         <Route path="/react/base" component={DemoBase} />
         <Route path="/react/redux" component={DemoRedux} />
         <Route path="/react/react_redux" component={DemoReactRedux} />
+        <Route path="/react/hooks" component={DemoHooks} />
       </div>
     </Router>
   );
