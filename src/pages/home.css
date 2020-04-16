@@ -1,8 +1,9 @@
-.mainDiv{
+.mainDiv {
   display: flex;
   width: 100%;
 }
-.leftNav{
+
+.leftNav {
   width: 16%;
   background-color: #c0c0c0;
   color:#333;
@@ -10,7 +11,8 @@
   height: 1000px;
   padding: 20px;
 }
-.rightMain{
+
+.rightMain {
   width: 84%;
   height:1000px;
   background-color: #fff;
